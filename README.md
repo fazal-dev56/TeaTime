@@ -1,2 +1,3 @@
 # TeaTime
-This is a static tea animation window made with the help of HTML and CSS.
+This is a simple HTML + CSS animation of a tea cup with rising vapors.  
+Deployed using GitHub Pages.
