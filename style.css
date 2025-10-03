@@ -15,13 +15,15 @@ body
 }
 .container
 {
-    position: relative;
+    position: flex;
     top: 50px;
+    transform: scale(1);
 }
 .button
 {
     position: relative;
-    top: -190px;
+    top: 100px;
+    left: 30px;
     width: 40px;
     height: 40px;
     background: white;
@@ -30,6 +32,8 @@ body
 .cup
 {
     position: relative;
+    top: -90px;
+    left: 100px;
     width: 280px;
     height: 300px;
     background: linear-gradient(to right, #f9f9f9, #d9d9d9);
@@ -83,12 +87,10 @@ body
 }
 .plate
 {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
+    position: relative;
+    top: 280px;
     width: 500px;
     height: 200px;
-    transform: translateX(-50%);
     border-radius: 50%;
     background: linear-gradient(to right, #f9f9f9, #e7e7e7);
     box-shadow: 0 35px 35px rgb(0, 0, 0.2);
@@ -160,5 +162,15 @@ body
     {
         transform: translateY(-300) scaleX(10);
     }
+}
+@media (max-width: 768px) {
+  .container {
+    transform: scale(0.8);
+  }
+}
 
+@media (max-width: 480px) {
+  .container {
+    transform: scale(0.6);
+  }
 }
