@@ -14,6 +14,7 @@
     <div class="container">
         
         <div class="clock-box">
+            <div id="islamic-date"></div>
            <div id="time"></div>
           <div id="date"></div>
         </div>
@@ -61,36 +62,7 @@
             <div class="handle"></div>
         </div>
     </div>
-    <script>
-function updatePakistanTime() {
-    const optionsTime = {
-        timeZone: "Asia/Karachi",
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true
-    };
-
-    const optionsDate = {
-        timeZone: "Asia/Karachi",
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-    };
-
-    const now = new Date();
-
-    const timeString = now.toLocaleTimeString("en-PK", optionsTime);
-    const dateString = now.toLocaleDateString("en-PK", optionsDate);
-
-    document.getElementById("time").textContent = timeString;
-    document.getElementById("date").textContent = dateString;
-}
-
-updatePakistanTime();
-setInterval(updatePakistanTime, 30000); // update every 30 seconds
-</script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
