@@ -35,7 +35,7 @@ async function updateIslamicDate() {
         const formattedDate = `${day}-${month}-${year}`;
 
         const response = await fetch(
-            `https://api.aladhan.com/v1/gToH?date=${formattedDate}&method=2&adjustment=-1`
+            `https://api.aladhan.com/v1/gToH?date=${formattedDate}`
         );
 
         const data = await response.json();
