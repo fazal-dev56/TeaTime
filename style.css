@@ -174,3 +174,33 @@ body
     transform: scale(0.6);
   }
 }
+
+.clock-box {
+    position: relative;
+    top: -130px;
+    left: 100px;
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border: 8px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Georgia", "Times New Roman", serif;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#time {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+
+#date {
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+
