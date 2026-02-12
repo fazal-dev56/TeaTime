@@ -182,7 +182,7 @@ body
     width: 320px;
     padding: 20px;
     background: white;
-    border: 8px solid black;
+    border: 8px solid rgb(255, 255, 255);
     border-radius: 20px;
     text-align: center;
     font-family: "Georgia", "Times New Roman", serif;
